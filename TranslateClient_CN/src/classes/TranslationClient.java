@@ -3,6 +3,7 @@ package classes;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class TranslationClient extends javax.swing.JFrame {
@@ -12,6 +13,8 @@ public class TranslationClient extends javax.swing.JFrame {
     public TranslationClient() {
         initComponents();
         ThisClient = this;
+        
+        //jButton1.setIcon(new ImageIcon(new ImageIcon(ImageIO.read(this.getClass().getResource("/images/translate.png"))).getImage().getScaledInstance(lbl_gamer1.getWidth(), lbl_gamer1.getHeight(), Image.SCALE_DEFAULT));
     }
 
     /**
@@ -62,6 +65,7 @@ public class TranslationClient extends javax.swing.JFrame {
 
         toTextArea.setColumns(20);
         toTextArea.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        toTextArea.setLineWrap(true);
         toTextArea.setRows(5);
         toTextArea.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         toTextArea.setMaximumSize(new java.awt.Dimension(300, 350));
@@ -78,6 +82,7 @@ public class TranslationClient extends javax.swing.JFrame {
 
         fromTextArea.setColumns(20);
         fromTextArea.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        fromTextArea.setLineWrap(true);
         fromTextArea.setRows(5);
         fromTextArea.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         fromTextArea.setMaximumSize(new java.awt.Dimension(300, 350));
